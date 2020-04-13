@@ -1,1 +1,15 @@
-<p>user-search works!</p>
+
+    <form (ngSubmit)="onSubmit(name.value); name.reset()">
+      <div class="text-center mb-4">
+        <div class="mb-4 alert alert-success" *ngIf='userFound'> Username was successfully found! </div>
+        <!-- <img class="mb-4" src="../../assets/images/user.jpg" alt="Git Them Logo" /> -->git 
+        <h3 class="mb-4 font-weight-normal"> Get any user's info by searching for them </h3>
+        <p> Enter a GitHub username to see the person's repos;
+        </p>
+      </div>
+      <div class="form-label-group">
+        <input class="form-control" type="text" name="name" ngModel #name='ngModel' placeholder="Github Username" required autofocus />
+        <label> Username </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit"> Submit </button>
+    </form>

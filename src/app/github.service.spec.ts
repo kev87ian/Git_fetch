@@ -11,6 +11,7 @@ describe('GithubService', () => {
   });
 
   it('should be created', () => {
+    const service: GithubService = TestBed.get(GithubService);
     expect(service).toBeTruthy();
   });
 });

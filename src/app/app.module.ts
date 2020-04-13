@@ -7,13 +7,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserReposComponent } from './user-repos/user-repos.component';
 import { UserSearchComponent } from './user-search/user-search.component';
+import { LandingComponent } from './landing/landing.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     UserReposComponent,
-    UserSearchComponent
+    UserSearchComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
