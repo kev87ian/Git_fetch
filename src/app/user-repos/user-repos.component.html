@@ -1,36 +1,35 @@
-
-<div class="jumbotron">
-  <h3 style="text-align: center;"> <b>Git Fetch </b> </h3> <br>
-  <p>This is a web app that allows you to search for Github users and view info about them. The search query returns their name, 
-    list of repositories and description of the repositories.</p>
-    <p>Get started by pressing the button below</p>
-     <a class="btn btn-outline btn-light" routerLink="/user-search" role="button"> Search User </a>
+<div class="container">
+  <div class="row">
+    <div class="span4 offset4" style="float: left; text-align: center">
+      <div class="jumbotron">
+        <h3 style="text-align: center;"> <b>Git Fetch </b> </h3> <br>
+        <p>This is a web app that allows you to search for Github users and view info about them. The search query returns their name, 
+          number of followers and number of people they are following,list of repositories and description of the repositories.</p>
+      <p>Get started by pressing the <i>search</i> button below</p>
+      <a class="btn btn-primary btn-dark" type="button" routerLink="/user-search" role="button"> Search User </a>
+    </div>
+  </div>
 </div>
-<div class="collapse navbar-collapse" id="navbarCollapse">
-  <ul class="navbar-nav ml-auto">
-    <li class="nav-item">
-      <a class="btn btn-outline btn-light" routerLink="/user-search" role="button"> Search User </a>
-    </li>
-  </ul>
+
 </div>
 <div class="container-fluid">
   <div class="row">
     <div class="mx-auto flex-column align-items-center py-3">
-      <img class="mb-4" [src]='user.avatar_url' alt="Git Them Logo" />
+      <img class="mb-4" [src]='user.avatar_url' alt="git_fetch" />
       <div>
-        <span class="badge badge-primary mr-1">Followers {{user.followers}}</span>
-        <span class="badge badge-success mr-1">Following {{user.following}}</span>
+        <span class="badge badge-primary mr-2">Followers {{user.followers}}</span>
+        <span class="badge badge-success mr-2">Following {{user.following}}</span>
       </div>
       <h3 class="font-weight-bold"> {{user.name}} </h3>
       <h4> @{{user.login}} </h4>
-      <a class="btn btn-light btn-block" [href]='user.html_url' target="blank"> View Profile </a>
+      <a class="btn btn-light btn-block" [href]='user.html_url' target="blank"> Click to visit Github Profile </a>
     </div>
     <div class="col-md-8 py-3">
       <div class="row justify-content-center">
         <div class="col-md-6" *ngFor='let repo of repos'>
           <div class="card mb-4 box-shadow" style="min-height: 200px;">
             <div class="card-body d-flex flex-column align-items-start">
-              <h3 class="mb-2"> <a class="text-dark" target='blank' [href]='repo.html_url'> {{repo.name}} </a> </h3>
+              <h3 class="mb-2"> <a class="text-dark" [href]='repo.html_url'> {{repo.name}} </a> </h3>
               <p class="card-text"> {{repo.description}} </p>
             </div>
           </div>

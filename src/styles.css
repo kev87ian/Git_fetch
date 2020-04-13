@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+ body {
+    background-image: url(/assets/wp3082312-github-wallpapers.png);
+    color: grey;
+    background-attachment: fixed;
+}
