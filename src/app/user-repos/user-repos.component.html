@@ -1,6 +1,6 @@
 <div class="container"> 
   <div class="row">
-    <div class="span4 offset4" style="float: left; text-align: center">
+    <div>
       <div class="jumbotron">
         <h3 style="text-align: center;"> <b>Git Fetch </b> </h3> <br>
         <p>This is a web app that allows you to search for Github users and view info about them. The search query returns their name, 
@@ -15,7 +15,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="mx-auto flex-column align-items-center py-3">
-      <img class="mb-4" [src]='user.avatar_url' alt="git_fetch" />
+      <img class="mb-4" [src]='user.avatar_url' alt="user_avatar" />
       <div>
         <span class="badge badge-primary mr-2">Followers {{user.followers}}</span>
         <span class="badge badge-success mr-2">Following {{user.following}}</span>

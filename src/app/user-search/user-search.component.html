@@ -1,8 +1,6 @@
 <div class="jumbotron">
     <form (ngSubmit)="onSubmit(name.value); name.reset()">
       <div class="text-center mb-4">
-        <div class="mb-4 alert alert-success" *ngIf='userFound'> Username was successfully found! </div>
-        <!-- <img class="mb-4" src="../../assets/images/user.jpg" alt="Git Them Logo" >/ -->
         <h3 class="mb-4 font-weight-normal"> Get any user's info by searching for them </h3>
         <p> Enter the GitHub username you want to search for;
         </p>
