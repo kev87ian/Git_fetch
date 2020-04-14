@@ -1,27 +1,68 @@
-# GitFetch
+# Git Fetch
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+> This project is an Angular App that demonstrates usage of the GitHub API to retrieve user and repository information.
 
-## Development server
+## Live Link
+https://kev87ian.github.io/Git_fetch/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+Git_fetch is a web app that allows the user to search for people on github using their user names. It returns their names, 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+To get you started you can simply clone the `git_fetch` repository and install the dependencies.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+You must also have Node.js and its package manager (npm) installed. You can get them from [here](https://nodejs.org/).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Clone `Git_fetch`
 
-## Running end-to-end tests
+Clone the `git_fetch` repository using git:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```
+git clone https://github.com/kev87ian/Git_fetch
+```
 
-## Further help
+### Install Dependencies
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To install these dependencies and setup the project environment, simply run:
+
+```
+npm install
+```
+
+### Run the Application
+
+The project is preconfigured with a simple development web server. The simplest way to start this server is:
+
+```
+ng serve
+```
+
+Now browse to the app at [`localhost:4200/`](local-app-url).
+
+## Usage
+
+Upon launch, a small description of the site is displayed. Below it is a search button for the user to search the usernames on Github. 
+On clicking the button, a form appears where one enters the user name, and submits the form.
+
+## Bugs
+
+The site does not give an error when a username is not found.
+
+## Contact
+
+Kevin Mathenge kelvinian87@gmail.com 
+
+## License
+
+The MIT License (MIT)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Copyright (c) 2020 Kevin Mathenge
