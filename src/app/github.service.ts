@@ -13,7 +13,7 @@ import { GhRepo } from "./gh-repo";
 })
 export class GithubService {
   private apiUrl = "https://api.github.com";
-  private apiKey = environment.authToken;
+  private apiKey = "fb484163c58f9540fe9b4b055b6e6e848d4124c9";
   constructor(private http: HttpClient) { }
 
   searchUsers(username: string): Observable<GhUser[]> {

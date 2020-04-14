@@ -1,6 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
  body {
-    background-image: url(/assets/wp3082312-github-wallpapers.png);
-    color: grey;
+    background-image: url(assets/wp3082312-github-wallpapers.png);
+    color: black;
     background-attachment: fixed;
 }
